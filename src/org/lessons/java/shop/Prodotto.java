@@ -36,6 +36,10 @@ public class Prodotto {
     this.iva = iva;
   }
 
+  void getProdotto(){
+    System.out.printf("Code: %d \nNome: %s \nDescrizione: %s \nPrezzo: %f \nIVA: %f", code, name, description, price, iva);
+  }
+
   float getPrice(){
     return price;
   }

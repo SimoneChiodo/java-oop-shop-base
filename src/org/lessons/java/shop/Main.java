@@ -6,17 +6,19 @@ public class Main {
       // Prodotto product = new Prodotto();
 
       // // Print the results
-      // System.err.println("Il prezzo del prodotto e': " + product.getPrice());
-      // System.err.println("Il prezzo del prodotto + IVA e': " + product.getPriceWithIva());
-      // System.err.println("Il nome del prodotto e': " + product.getName());
+      // System.out.println("Il prezzo del prodotto e': " + product.getPrice());
+      // System.out.println("Il prezzo del prodotto + IVA e': " + product.getPriceWithIva());
+      // System.out.println("Il nome del prodotto e': " + product.getName());
 
       
       // Create a new istance
       Prodotto product = new Prodotto("Shampoo", "Just a normal shampoo", 4.99f, 22);
 
       // Print the results
-      System.err.println("Il prezzo del prodotto e': " + product.getFormattedPrice());
-      System.err.println("Il prezzo del prodotto + IVA e': " + product.getFormattedPriceWithIva());
-      System.err.println("Il nome del prodotto e': " + product.getName());
+      System.out.println("\nIl prezzo del prodotto e': " + product.getFormattedPrice());
+      System.out.println("Il prezzo del prodotto + IVA e': " + product.getFormattedPriceWithIva());
+      System.out.println("Il nome del prodotto e': " + product.getName());
+      System.out.println("---------");
+      product.getProdotto();
     }
 }
