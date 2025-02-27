@@ -3,12 +3,15 @@ package org.lessons.java.shop;
 // Import Random
 import java.util.Random;
 
+// NOTE: 
+// - BigDecimal type is better for currency variables
+
 public class Prodotto {
 
   // Attributes ---------------
   int code;
-  String name;
-  String description;
+  String name = "empty";
+  String description = "empty";
   float price;
   float iva;
 
