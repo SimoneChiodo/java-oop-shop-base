@@ -40,8 +40,16 @@ public class Prodotto {
     return price;
   }
 
+  String getFormattedPrice(){
+    return String.format("%.2f euro", price);
+  }
+
   float getPriceWithIva(){
     return price * (1 + iva / 100);
+  }
+
+  String getFormattedPriceWithIva(){
+    return String.format("%.2f euro", price * (1 + iva / 100));
   }
 
   String getName(){
