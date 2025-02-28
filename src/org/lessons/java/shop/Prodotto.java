@@ -9,7 +9,7 @@ import java.util.Random;
 public class Prodotto {
 
   // Attributes ---------------
-  int code;
+  private int code;
   String name = "empty";
   String description = "empty";
   float price;
@@ -39,12 +39,19 @@ public class Prodotto {
     this.iva = iva;
   }
 
-  void getProdotto(){
-    System.out.printf("Code: %d \nNome: %s \nDescrizione: %s \nPrezzo: %f \nIVA: %f", code, name, description, price, iva);
+  // Getter & Setter
+  int getCode(){
+    return code;
   }
 
-  float getPrice(){
-    return price;
+  void setCode(int code){
+    if(code >= 0)
+      this.code = code;
+  }
+
+  // Formatted Getter
+  void getProdotto(){
+    System.out.printf("Code: %d \nNome: %s \nDescrizione: %s \nPrezzo: %f \nIVA: %f", code, name, description, price, iva);
   }
 
   String getFormattedPrice(){

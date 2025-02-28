@@ -6,7 +6,7 @@ public class Main {
       // Prodotto product = new Prodotto();
 
       // // Print the results
-      // System.out.println("Il prezzo del prodotto e': " + product.getPrice());
+      // System.out.println("\nIl prezzo del prodotto e': " + product.getFormattedPrice());
       // System.out.println("Il prezzo del prodotto + IVA e': " + product.getPriceWithIva());
       // System.out.println("Il nome del prodotto e': " + product.getName());
 
