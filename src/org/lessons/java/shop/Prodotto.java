@@ -10,10 +10,10 @@ public class Prodotto {
 
   // Attributes ---------------
   private int code;
-  String name = "empty";
-  String description = "empty";
-  float price;
-  float iva;
+  private String name = "empty";
+  private String description = "empty";
+  private float price;
+  private float iva;
 
 
   // Methods ------------------
@@ -48,6 +48,40 @@ public class Prodotto {
     if(code >= 0)
       this.code = code;
   }
+  
+  String getName(){
+    return name;
+  }
+
+  void setName(String name){
+    this.name = name;
+  }
+  
+  String getDescription(){
+    return description;
+  }
+
+  void setDescription(String description){
+    this.description = description;
+  }
+  
+  float getPrice(){
+    return price;
+  }
+
+  void setPrice(float price){
+    if(price >= 0)
+      this.price = price;
+  }
+  
+  float getIva(){
+    return iva;
+  }
+
+  void setIva(float iva){
+    if(iva >= 0)
+      this.iva = iva;
+  }
 
   // Formatted Getter
   void getProdotto(){
@@ -66,7 +100,7 @@ public class Prodotto {
     return String.format("%.2f euro", price * (1 + iva / 100));
   }
 
-  String getName(){
+  String getFormattedName(){
     return code + "-" + name;
   }
 
