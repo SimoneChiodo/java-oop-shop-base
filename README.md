@@ -1,30 +1,34 @@
-### Esercizio
+# Esercizio Java OOP: Classe Prodotto
 
-## Parte 1
+## Descrizione
 
-Nel progetto java-oop-shop, package org.lessons.java.shop, creare la classe Prodotto che gestisce i prodotti dello shop.
+Nel progetto `java-oop-shop`, all’interno del package `org.lessons.java.shop`, si deve creare una classe chiamata **Prodotto** per gestire i prodotti di uno shop.
 
-Un prodotto è caratterizzato da:
+### Caratteristiche della classe Prodotto
 
-- codice (numero intero)
-- nome
-- descrizione
-- prezzo
-- iva
+- **Attributi:**
+  - `codice` (numero intero, generato casualmente all'istanza, accessibile solo in lettura)
+  - `nome` (leggibile e modificabile)
+  - `descrizione` (leggibile e modificabile)
+  - `prezzo` (leggibile e modificabile)
+  - `iva` (leggibile e modificabile)
 
-Usate opportunamente costruttori, attributi ed eventuali altri metodi di “utilità” per fare in modo che:
+- **Costruttori:**
+  - Devono esserci almeno due costruttori diversi (ad esempio uno con tutti i parametri e uno con solo alcuni)
 
-- alla creazione di un nuovo prodotto il codice sia valorizzato con un numero random
-- il prodotto esponga un metodo per avere il prezzo base
-- il prodotto esponga un metodo per avere il prezzo comprensivo di iva
-- il prodotto esponga un metodo per avere il nome esteso, ottenuto concatenando codice-nome
+- **Metodi:**
+  - Metodo per ottenere il prezzo base (senza IVA)
+  - Metodo per ottenere il prezzo comprensivo di IVA
+  - Metodo per ottenere il nome esteso, ovvero concatenazione di `codice` e `nome`
 
-Nello stesso package aggiungete una classe Main con metodo main nella quale testate tutte le funzionalità della classe Prodotto.
+- **Accesso:**
+  - `codice` è solo in lettura (getter senza setter)
+  - Gli altri attributi hanno getter e setter
 
-## Parte 2
+### Classe Main
 
-Usate opportunamente i livelli di accesso (public, private), i costruttori, i metodi getter e setter ed eventuali altri metodi di "utilità" per fare in modo che:
+- Nel package stesso, creare una classe **Main** con il metodo `main` dove si crea almeno un oggetto Prodotto e si testano tutti i metodi sopra descritti.
 
-- esistano almeno due costruttori diversi
-- il codice prodotto sia accessibile solo in lettura
-- gli altri attributi siano accessibili sia in lettura che in scrittura
+---
+
+Questo esercizio mette in pratica i concetti di incapsulamento, costruttori multipli, e metodi di utilità in Java orientato agli oggetti.
